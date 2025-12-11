@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dusk by Dawn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              p1: {
+                base: '#3b82f6', // blue-500
+                dark: '#1e40af', // blue-800
+                light: '#93c5fd', // blue-300
+              },
+              p2: {
+                base: '#ef4444', // red-500
+                dark: '#991b1b', // red-800
+                light: '#fca5a5', // red-300
+              },
+              river: '#06b6d4', // cyan-500
+              ground: '#a8a29e', // stone-400
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #1c1917; /* stone-900 */
+        color: #f5f5f4;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* Custom scrollbar for game logs */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #292524;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #57534e;
+        border-radius: 4px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
